@@ -6,6 +6,9 @@ ruby 3.3.0
 )
 [x86_64-darwin23]
 
+# For Ruby gems see
+# https://rubygems.org/
+
 Usage: ruby [switches] [--] [programfile] [arguments]
   -0[octal]       specify record separator (\0, if no argument)
                   (-00 for paragraph mode, -0777 for slurp mode)
