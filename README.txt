@@ -3,15 +3,19 @@
 # Read this file with syntax highlighting:
 # https://github.com/tail-call/Ruby-Study/blob/main/README.txt
 
+# For Ruby gems see
+# https://rubygems.org/
+
+# Tmux hotkeys
+# C-b C-" Split vertically
+# C-b C-% Split horizontally
+
 ruby 3.3.0
 (
     2023-12-25
     revision 5124f9ac75
 )
 [x86_64-darwin23]
-
-# For Ruby gems see
-# https://rubygems.org/
 
 Usage: ruby [switches] [--] [programfile] [arguments]
   -0[octal]       specify record separator (\0, if no argument)
