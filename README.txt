@@ -1,4 +1,8 @@
 # vim: syntax=ruby
+
+# Read this file with syntax highlighting:
+# https://github.com/tail-call/Ruby-Study/blob/main/README.txt
+
 ruby 3.3.0
 (
     2023-12-25
