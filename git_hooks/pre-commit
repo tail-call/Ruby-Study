@@ -1,0 +1,24 @@
+#!/bin/bash
+#vim syntax=bash
+
+# Скрипт для проверки синтаксиса Ruby файлов перед коммитом
+# Получаем список всех Ruby файлов, которые были изменены или добавлены
+
+FILES=$(git diff --cached --name-only --diff-filter=ACM | grep '\.rb$')
+EXIT_STATUS=0
+
+if [ -z "$FILES" ]; then
+  exit 0
+fi
+
+# Проверяем каждый файл с помощью `ruby -c`
+for FILE in $FILES; do
+  ruby -c "$FILE"
+  if [ $? -ne 0 ]; then
+    echo "Ruby syntax check failed on $FILE"
+    EXIT_STATUS=1
+  fi
+done
+
+exit $EXIT_STATUS
+
