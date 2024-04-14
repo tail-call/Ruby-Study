@@ -10,6 +10,7 @@ Usage: ruby [switches] [--] [programfile] [arguments]
   -0[octal]       specify record separator (\0, if no argument)
                   (-00 for paragraph mode, -0777 for slurp mode)
   -a              autosplit mode with -n or -p (splits $_ into $F)
+# , Useful as a pre-commit hook
   -c              check syntax only
   -Cdirectory     cd to directory before executing your script
   -d, --debug     set debugging flags (set $DEBUG to true)
